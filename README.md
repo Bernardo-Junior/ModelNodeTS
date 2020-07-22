@@ -48,7 +48,7 @@ yarn eslint --init
 ir nos plugins do vs code e instalar o eslint
 
 abrir o preferences: Open Settings(JSON)
-	-> colar lá dentro:
+	  colar lá dentro
 		"[javascript]": {
 		   "editor.codeActionsOnSave": {
 		     "source.fixAll.eslit": true,
