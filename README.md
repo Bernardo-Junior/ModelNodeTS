@@ -1,7 +1,9 @@
 <h1> Modelo usando Node Typescript Eslint typeORM </h1>
 
 yarn add express
+
 yarn add typescript -D -> importar o typescript em modo de desenvolvimento
+
 yarn tsc --init -> para gerar o tsconfig.json 
 	abrir o tsconfig.json e descomentar o outDir e adicionar o diretório dist
 	descomentar o rootDir e adicionar o diretório src 
@@ -11,7 +13,9 @@ yarn add @types/nome da biblioteca que o typescript não encontra a referência
 ##Usar 'yarn tsc' para gerar o codigo js do ts para o dist
 
 yarn add ts-node-dev -D -> serve para rodar o codigo ts sem converter para o js
+
 	abrir o package.json e criar o:
+
 		"scripts": {
 			"build": "tsc",
 			"dev:server": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
@@ -48,7 +52,7 @@ yarn eslint --init
 ir nos plugins do vs code e instalar o eslint
 
 abrir o preferences: Open Settings(JSON)
-	  colar lá dentro
+	  colar lá dentro:
 
 		"[javascript]": {
 		   "editor.codeActionsOnSave": {
