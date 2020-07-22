@@ -173,9 +173,7 @@ clicar no botao de play com um virus
 
 			name: "debug"
 
-
-	colocar: 
-
+			colocar: 
 
 			"protocol": "inspector"
 			"restart": true
