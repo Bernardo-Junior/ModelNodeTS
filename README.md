@@ -2,15 +2,22 @@
 
 yarn add express
 
+
 yarn add typescript -D -> importar o typescript em modo de desenvolvimento
 
+
 yarn tsc --init -> para gerar o tsconfig.json 
+
+
 	abrir o tsconfig.json e descomentar o outDir e adicionar o diretório dist
 	descomentar o rootDir e adicionar o diretório src 
 
+
 yarn add @types/nome da biblioteca que o typescript não encontra a referência
 
-##Usar 'yarn tsc' para gerar o codigo js do ts para o dist
+
+<h3>Usar 'yarn tsc' para gerar o codigo js do ts para o dist</h3>
+
 
 yarn add ts-node-dev -D -> serve para rodar o codigo ts sem converter para o js
 
