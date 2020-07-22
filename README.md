@@ -42,16 +42,32 @@ yarn add ts-node-dev -D -> serve para rodar o codigo ts sem converter para o js
 
 yarn add eslint -D 
 yarn eslint --init 
+
 	Qual a forma que quer usar? -> To check syntax, find problems, and enforce code style
+
+
 	Como esta fazendo as importações? -> JavaScript modules (import/export)
+
+
 	Esta usando algum framework? -> None of these
+
+
 	O projeto usa typecript? -> y
+
+
 	Onde você esta rodando o codigo?
 		.aperta o backspace pra desmarcar Browser e seleciona o node apertando backspace
+
+
  	Qual guia de estilo? -> Use a popular style guide
 		.Selecionar o Airbnb
+
+
 	formato de config do eslint -> JSON
+
+
 	Copiar o codigo e instalar com yarn add -D @typescript-eslint/eslint-plugin@latest eslint-config-airbnb-base@latest eslint-plugin-import@^2.21.2 @typescript-eslint/parser@latest
+
 
 ir nos plugins do vs code e instalar o eslint
 
