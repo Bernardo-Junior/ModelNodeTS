@@ -146,25 +146,37 @@ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
 vai da error de aspas duplas 
 	criar na raiz do projeto 'prettier.config.js'
 		adicionar:
+
+
 			module.exports = {
 				singleQuote: true,
 				trailingComma: 'all',
 				arrowParens: 'avoid'
 			}
 
+
 o eslint vai tentar fazer tratativa do prettier
 	criar um arquivo .eslintignore e dentro dele adicionar:
+
+
 		/*.js
 		node_modules
 		dist
+
 
 <h2>Debugg</h2>
 clicar no botao de play com um virus
 	iniciar o debug
 			apagar a linha "program"
 	colocar attach no lugar do launch
+
+
 			name: "debug"
+
+
 			colocar: 
+
+
 			"protocol": "inspector"
 			"restart": true
 
