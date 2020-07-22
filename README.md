@@ -27,11 +27,15 @@ yarn add ts-node-dev -D -> serve para rodar o codigo ts sem converter para o js
 <h3>Serve para padronizar codigo em diversas ferramentas para codificar</h3>
 	ir nos plugins do vs code e instalar o 'EditorConfig for VS Code'
 	clicar na raiz com o lado direito e selecionar 'Generate .editorConfig'
+
 	abrir o .editorConfig mudar o:
+
 		ident_size para '2'
 		trim_trailing_whitespace para 'true'
 		insert_final_newline para 'true'
+
 	acrescentar no .editorconfig:
+
 		end_of_line = lf
 
 <h2>Eslint</h2> 
