@@ -178,4 +178,72 @@ clicar no botao de play com um virus
 			"protocol": "inspector"
 			"restart": true
 
- 
+<h2> typeORM -> Banco de dados postgres
+criar na raiz da pasta o ormconfig.json
+
+usar yarn add typeorm pg -> para instalar o postgress com o typeORM
+
+
+		{
+		   "type": "postgres",
+		   "host": "localhost",
+		   "port": 5432,
+		   "username": "postgres",
+		   "password": "docker",
+		   "database": "gostack_gobarber"
+ 		}
+
+criar dentro do src uma pasta chamada 'database e dentro o index.ts'
+
+	colocar:
+
+
+		import { createConnection } from 'typeorm';
+		
+		createConnection();
+
+ir no server.ts e adicionar 
+
+
+	+ import './database'
+
+
+ir no dbeaver clicar com o direito na conexao e criar a database
+
+e rodar no terminal
+
+		
+	yarn dev:server
+
+
+criar uma pasta vazia na pasta database chamada migrations
+ir no ormconfig.json e adicionar informações para gerar as migrations
+
+
+	+ "migrations": [
+		"./src/database/migrations/*.ts"
+	],
+	+ "cli": {
+		"migrationsDir": "./src/database/migrations"
+	}
+
+para fazer que as migrations entendam ts vamos no doc package.json em scripts e adicionar
+	+ "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
+
+executar 
+
+
+	yarn typeorm
+	yarn typeorm migration:create -n CreateAppointments -> nome da tabela que vai criar no banco de dados
+
+ir no documento que foi criado na pasta migrations 
+
+ir no .eslintrc.json em rules e adicionar 
+
+
+	"class-methods-use-this": "off",
+
+depois de criar a tabela rodar
+
+
+	yarn typeorm migration:run -> para criar a tabela
