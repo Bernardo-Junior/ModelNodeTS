@@ -73,6 +73,8 @@ yarn eslint --init
 	formato de config do eslint -> JSON
 
 
+	seleciona Não na ultima etapa 
+
 	Copiar o codigo e instalar com yarn add -D @typescript-eslint/eslint-plugin@latest eslint-config-airbnb-base@latest eslint-plugin-import@^2.21.2 @typescript-eslint/parser@latest
 
 
