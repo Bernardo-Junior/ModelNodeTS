@@ -178,7 +178,7 @@ clicar no botao de play com um virus
 			"protocol": "inspector"
 			"restart": true
 
-<h2> typeORM -> Banco de dados postgres
+<h2> typeORM -> Banco de dados postgres</h2>
 criar na raiz da pasta o ormconfig.json
 
 usar yarn add typeorm pg -> para instalar o postgress com o typeORM
